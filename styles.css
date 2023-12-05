@@ -25,10 +25,113 @@ main {
   display: none;
 }
 
+#role {
+  display: flex;
+}
+
 h1 {
   cursor: pointer;
 }
 
 h1:hover {
   text-decoration: underline;
+}
+
+#Top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#role {
+  display: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 22px;
+  display: flex;
+  min-height: 100vh;
+}
+
+aside {
+  background-color: red;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+main {
+  background-color: blue;
+  flex-basis: 0;
+  flex-grow: 4;
+}
+
+#sommaire {
+  display: none;
+}
+
+h1 {
+  cursor: pointer;
+}
+
+h1:hover {
+  text-decoration: underline;
+}
+
+#rolelol {
+  display: flex;
+  justify-content: space-around;
+}
+
+#roleprop {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#Top {
+  align-items: center;
+}
+
+#Role-Top {
+  display: grid;
+  justify-content: space-around;
+}
+#Role-Jgl {
+  display: none;
+}
+#Role-Mid {
+  display: none;
+}
+#Role-Adc {
+  display: none;
+}
+#Role-Sup {
+  display: none;
+}
+
+#SettText {
+  display: none;
+  opacity: 0.75;
+  font-weight: bold;
+  background-color: aliceblue;
+  margin-left: 20px;
+  padding: 5px 30px;
+  border-radius: 0px 5px 5px 5px;
+  width: 100px;
+}
+
+#SettText:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -40px;
+  margin-top: -5px;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid aliceblue;
 }
